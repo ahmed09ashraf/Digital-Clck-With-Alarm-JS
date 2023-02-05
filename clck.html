@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="clck.css">
+        <title>Digital watch</title>
+       
+      
+      </head>
+      
+      <body>
+    <div class="container">
+        <div class="clck">
+          <div id="watch"></div>
+          <div id="day"></div>
+          <div class="btn" onclick="btnFn()">Set Alarm</div>
+          <div class="popup">
+            <div class="alarm-text">Set Alarm After</div>
+            <div class="hr-cont">
+              <div class="hr">HOURS</div>
+              <input type="text" id="hr" name="hr" placeholder="0" />
+            </div>
+            <div class="min-cont">
+              <div class="min">MINUTES</div>
+              <input type="text" id="min" name="min" placeholder="0" />
+            </div>
+            <div class="sec-cont">
+              <div class="sec">SECONDS</div>
+              <input type="text" id="sec" name="sec" placeholder="0" />
+            </div>
+            <div class="btnAlarm" onclick="setAlarm()">Set</div>
+            <div class="btnAlarm clear-btn" onclick="clearAlarm()">Clear</div>
+          </div>
+        </div>
+    </div>
+
+    <script src="clck.js"></script>
+      </body>
+      
+</html>
